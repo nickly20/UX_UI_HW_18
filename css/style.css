@@ -4,7 +4,7 @@
 /* Resetting default styles */
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding: 0;
     background-color: rgb(238, 245, 221);
     font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -49,7 +49,8 @@
     right: 30px;
     position: fixed;
     z-index: 10;
-    scale: 75%
+    scale: 75%;
+    background: none;
 }
 
 /* Navigation links */
@@ -96,6 +97,7 @@ h1 {
     font-weight: 600;
     font-size: 350px;
     text-align: center;
+    margin-bottom: 2.5%;
 }
 
 h2 {
@@ -103,7 +105,7 @@ h2 {
     font-weight: 500;
     font-size: 40px;
     width: 300px;
-    margin-top: 8%;
+    margin-top: 4%;
     margin-bottom: 2%;
 }
 
@@ -115,8 +117,8 @@ h2 {
 }
 
 .prg1 {
-    width: 80%;
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 30%;
     transition: .8s;
 }
 
@@ -156,7 +158,7 @@ h2 {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     border: none;
-    border-radius: 20px; 
+    border-radius: 10px; 
     cursor: pointer;
     transition: all .3s ease 0s;
     justify-items: 30px;
@@ -175,7 +177,7 @@ button:hover {
 
 
 .container{
-    margin: 8% 8% 6% 8%;
+    margin: 8%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -183,8 +185,7 @@ button:hover {
     
 }
 .box{
-    grid-row: span;
-    margin-bottom: 8%;
+    grid-row: span 1;  
     width: 100%;
     height: 500px;
     background: rgb(221, 216, 216);
@@ -207,14 +208,14 @@ button:hover {
 
 .description {
     position:absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     background: none;
     flex-direction: column;
-    align-items: center;
+    text-align:center;
     justify-content: center;
     font-size: 15px;
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -233,7 +234,7 @@ button:hover {
     height: 500px;
     background: rgb(221, 216, 216);
     border-radius: 10px;
-    transition: 0.9;
+    transition: 1.5;
 }
 .box:hover{
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
@@ -248,22 +249,22 @@ button:hover {
         margin-bottom: 3%
     }
     .prg1 {
-        margin-left: 20%;
         background: none;
     }
     h2 {
         font-family: Inter, Arial, Helvetica, sans-serif;
         font-weight: 500;
-        font-size: 28px;
-        width: 200px;
-        line-height: 35px;
-        margin-top: 8%;
-        margin-bottom: 2%;
+        font-size: 32px;
+        width: 250px;
+        line-height: 45px;
+        margin-top: 2%;
+        margin-bottom: 6%;
     }
     .intro {
-        font-size: 18px;
+        font-size: 22px;
         width: 400px;
         margin-bottom: 4%;
+        line-height: 30px;
     }
 
 }
@@ -272,29 +273,33 @@ button:hover {
     h1 {
         font-size: 180px;
         text-align: center;
-        margin-bottom: 3%
+        margin-bottom: 3%;
+        margin-top:9%
     }
     .prg1 {
-        scale: 120%;
-        margin-left: 10%;
+        scale: 100%;
+        min-width: 400px;
+        min-height: auto;
+        margin-left: auto;
         background: none;
     }
     h2 {
         font-family: Inter, Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 20px;
-        width: 200px;
+        width: 150px;
         line-height: 28px;
-        margin-top: 8%;
-        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-bottom: 3%;
     }
     .intro {
         font-size: 15px;
         width: 300px;
         margin-bottom: 4%;
+        line-height: 24px;
     }
     .container{
-        margin: 8% 8% 6% 8%;
+        margin: 8%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
