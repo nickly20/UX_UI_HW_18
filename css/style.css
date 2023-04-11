@@ -1,0 +1,314 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600&display=swap');
+/* Resetting default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 245, 221);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+/* Logo */
+.logo {
+    padding: 10px 0px 0px 15px;
+    width: 70px;
+    top: 24px;
+    left: 15px;
+    position: fixed;
+    z-index: 10;
+    background: none;
+}
+
+.work-btn {
+    top: 24px;
+    right: 25px;
+    position: fixed;
+    z-index: 10; 
+}
+
+.about-btn {
+    top: 36px;
+    right: 160px;
+    position: fixed;
+    z-index: 10;
+    background: none;  
+}
+
+.contact-btn {
+    top: 36px;
+    right: 250px;
+    position: fixed;
+    z-index: 10;  
+    background: none;
+}
+
+.socials {
+    bottom: 24px;
+    right: 30px;
+    position: fixed;
+    z-index: 10;
+    scale: 75%
+}
+
+/* Navigation links */
+li, a, button {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    justify-content: right;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 10px 10px;
+}
+
+/* Navigation links list */
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display:inline-block; 
+    padding: 8px 10px 50px;
+}
+
+.nav_links li a {
+    transition: all .3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #a4da6e
+}
+
+
+/* Hero section container */
+h1 { 
+    font-family: Syne, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 350px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    width: 300px;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding: 15px;
+    grid-gap: 20px;
+}
+
+.prg1 {
+    width: 80%;
+    margin-left: 20%;
+    transition: .8s;
+}
+
+.prg1:hover {
+    scale: 108%
+}
+
+.intro {
+    font-size: 25px;
+    width: 530px;
+    margin-bottom: 4%;
+}
+
+.background {
+    margin-left: 3%;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    grid-gap: 20px;
+}
+
+.uxui-2 .uxui-3 {
+    width: 100px;
+    height: 200px;
+    background-color: darkgray;
+}
+
+
+/* Call-to-action button */
+
+.work-btn, button {
+    padding: 9px 25px ;
+    margin: 8px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    justify-items: 30px;
+}
+
+button:hover {
+    background-color:rgba(58, 56, 56, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+/* Resume link */
+.resume {
+    margin: 20px 500px 0px 0px;
+    position: absolute;
+}
+
+
+.container{
+    margin: 8% 8% 6% 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px 50px
+    
+}
+.box{
+    grid-row: span;
+    margin-bottom: 8%;
+    width: 100%;
+    height: 500px;
+    background: rgb(221, 216, 216);
+    border-radius: 10px;
+    transition: 1.5;
+}
+
+.box, .box-2 {
+    font-family: Syne, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 500px;
+    color:rgb(238, 245, 221);
+    position: relative;
+}
+
+.title-card, .title-card-2 {
+   font-family: Syne, Arial, Helvetica, sans-serif;
+   font-size: 22px;
+}
+
+.description {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color:rgba(58, 56, 56, 0.8);
+    opacity: 0;
+}
+
+.description:hover {
+    opacity: 1;
+}
+
+.box-2 {
+    grid-row: span 2;
+    width: 100%;
+    height: 500px;
+    background: rgb(221, 216, 216);
+    border-radius: 10px;
+    transition: 0.9;
+}
+.box:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1900px){
+    h1 {
+        font-size: 250px;
+        text-align: center;
+        margin-bottom: 3%
+    }
+    .prg1 {
+        margin-left: 20%;
+        background: none;
+    }
+    h2 {
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        width: 200px;
+        line-height: 35px;
+        margin-top: 8%;
+        margin-bottom: 2%;
+    }
+    .intro {
+        font-size: 18px;
+        width: 400px;
+        margin-bottom: 4%;
+    }
+
+}
+
+@media (max-width: 1200px){
+    h1 {
+        font-size: 180px;
+        text-align: center;
+        margin-bottom: 3%
+    }
+    .prg1 {
+        scale: 120%;
+        margin-left: 10%;
+        background: none;
+    }
+    h2 {
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        width: 200px;
+        line-height: 28px;
+        margin-top: 8%;
+        margin-bottom: 2%;
+    }
+    .intro {
+        font-size: 15px;
+        width: 300px;
+        margin-bottom: 4%;
+    }
+    .container{
+        margin: 8% 8% 6% 8%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 80px 50px;
+        scale: 90%
+        
+    }
+    .box{
+        grid-row: span 1;
+        margin-bottom:8%;
+        width: 100%;
+        height: 500px;
+        background: rgb(221, 216, 216);
+        border-radius: 10px;
+        transition: 1.5;
+    } 
+}
