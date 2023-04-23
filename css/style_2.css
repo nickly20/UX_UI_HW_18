@@ -16,7 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Logo */
+/* Nav positions */
 .logo {
     padding: 10px 0px 0px 15px;
     width: 70px;
@@ -60,7 +60,7 @@ html {
     background: none;
 }
 
-/* Navigation links */
+/* Navigation styles */
 li, a, button {
     font-family: Syne, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -70,11 +70,8 @@ li, a, button {
     text-decoration: none;
     padding: 5px;
     justify-content: right;
-    
 }
 
-
-/* Navigation links list */
 .nav_links {
     list-style: none;
 }
@@ -116,6 +113,8 @@ button:hover, .work-btn:hover {
     color: black;
 }
 
+/* Hero */
+
 .text {
   display: flex; 
   flex-direction: column;
@@ -147,37 +146,14 @@ h1 {
     padding: 50px 50px 0 50px;
 }
 
+/* Skills */
 
-.box-2 {
-    position: relative;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-    background: rgb(221, 216, 216); 
-    transition: 1.5;
-    display:grid;
-    grid-template-rows: 1fr;
-}
-
-h5 {
-    font-family: Syne, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    position: absolute;
-    display: flex;
-    background: none;
-    top: 20px;
-    left: 30px;
-}
-
-/* Center the container div */
 .contain {
     display: flex;
     justify-content: center;
     margin: 0 10% 0% 10%
   }
   
-  /* Define the three column divs */
   .column {
     flex-basis: 33.33%;
     padding: 10px;
@@ -189,7 +165,6 @@ h5 {
     height: 380px;
   }
   
-  /* Add some styling for visualization */
   .column {
     background-color: #d1dfc4;
     background:#C5EC56 ;
@@ -251,21 +226,22 @@ h5 {
         flex-direction: column-reverse;
         grid-gap: 0;
         align-items: center; 
-        margin-top: 255px;   
+        margin-top: 210px;   
     }
 
     .hero-image {
-        width: 250px;
+        width: 230px;
         height: auto;
         margin-left: -70px;
-        top: 180px;
+        top: 150px;
         position: absolute;
     }
 
     .paragraph {
         font-weight: 300;
         line-height: 24px;
-        width: 420px;
+        width: 360px;
+        font-size: 14px;
     }
 
     .contain {
@@ -283,10 +259,9 @@ h5 {
         box-sizing: border-box;
         text-align: center;
         margin: 1.5%;
-        min-width: 450px;
+        min-width: 360px;
         height: 380px;
     } 
-    
 }
   
 
